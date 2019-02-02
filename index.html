@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <link rel="icon" href="images/LOGO1-new_01.png" type="image/x-icon">
+    <title>Home</title>
+    <link href="css/bootstrap.css" type="text/css" rel="stylesheet" media="all">
+    <link href="css/font-awesome.css" rel="stylesheet">
+    <script type="application/x-javascript">
+        addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false);
+        function hideURLbar(){ window.scrollTo(0,1); }
+    </script>
+    <link href="css/index.css" type="text/css" rel="stylesheet" media="all">
+    <link href="http://fonts.googleapis.com/css?family=Bigshot+One" rel="stylesheet">
+    <link href='http://fonts.googleapis.com/css?family=Roboto:400,100,100italic,300,300italic,400italic,500,500italic,700,700italic,900,900italic' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="css/flexslider.css" type="text/css" media="all" property="" />
+</head>
+<body>
+<div class="w3ls-banner">
+    <!-- header -->
+    <div class="header">
+        <div class="container">
+            <div class="header-top"><!-- header-top -->
+                <div class="agile-hdleft nav navbar-nav navbar-left">
+                    <ul>
+                        <li><a href="mailto:364816345@qq.com"><i class="fa fa-envelope-o"></i>364816345@qq.com</a></li>
+                        <li><i class="fa fa-phone"></i> +01 222 111 444 </li>
+                    </ul>
+                </div>
+                <div class="agileits-hdright nav navbar-nav navbar-right">
+                    <div class="social-icon">
+                        <a href="#" class="social-button twitter"><i class="fa fa-twitter"></i></a>
+                        <a href="#" class="social-button facebook"><i class="fa fa-facebook"></i></a>
+                        <a href="#" class="social-button google"><i class="fa fa-google-plus"></i></a>
+                        <a href="#" class="social-button dribbble"><i class="fa fa-dribbble"></i></a>
+                    </div>
+                </div>
+                <div class="clearfix"> </div>
+            </div>
+            <div class="header-mdl agileits-logo"><!-- header-two -->
+                <h1><a href="index.html"><img src="images/LOGO2.png"></a></h1>
+            </div>
+            <div class = "header-nav">
+                <nav class = "navbar navbar-default">
+                    <div class="navbar-header">
+                        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                            <span class="sr-only">Toggle navigation</span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </button>
+                    </div>
+                    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                        <ul class="nav navbar-nav">
+                            <li><a href="index.html" class="active">首页</a></li>
+                            <li><a href="about.html">关于</a></li>
+                            <li><a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">产品展示 <span class="caret"></span></a>
+                                <!--<ul class="dropdown-menu">-->
+                                    <!--<li><a href="icons.html">Web Icons</a></li>-->
+                                    <!--<li><a href="codes.html">Short Codes</a></li>-->
+                                <!--</ul>-->
+                            </li>
+                            <li><a href="gallery.html">产品</a></li>
+                            <li><a href="contact.html">联系我们</a></li>
+                        </ul>
+                        <div class="clearfix"> </div>
+                    </div>
+                </nav>
+
+            </div>
+
+        </div>
+    </div>
+    <!-- //header -->
+    <div class="banner-text agileinfo">
+        <div class="container">
+            <div class="flexslider">
+                <ul class="slides">
+                    <li>
+                        <div class="banner-w3lstext">
+                            <h2>欢迎</h2>
+                            <!--<p>江苏盛耐新材料有限公司欢迎您</p>-->
+                            <img src="images/3_02.jpg">
+                        </div>
+                    </li>
+                    <li>
+                        <div class="banner-w3lstext">
+                            <!--<h3>盛耐愿景</h3>-->
+                            <p>科技盛耐,绿色盛耐</p>
+                            <p>创造,责任,诚信,感恩</p>
+                            <p>团结协作,艰苦奋斗,开拓创新,阳光高效 </p>
+                            <p>专业铸造实力经营,科技创造卓越</p>
+                            <!--<img src="images/32_03.jpg">-->
+                        </div>
+                    </li>
+                    <!--<li>-->
+                        <!--<div class="banner-w3lstext">-->
+                            <!--<h3></h3>-->
+                            <!--<p>Mauris ex nulla, aliquam ornare facilisis nec convallis pulvinar a non nunc non leo sollicitudin, Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer gravida mauris non mi gravida, at sollicitudin odio efficitur. </p>-->
+                        <!--</div>-->
+                    <!--</li>-->
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+<script src="js/jquery-2.2.3.min.js"></script>
+<!-- FlexSlider -->
+<script defer src="js/jquery.flexslider.js"></script>
+<script type="text/javascript">
+    $(window).load(function(){
+        $('.flexslider').flexslider({
+            animation: "slide",
+            start: function(slider){
+                $('body').removeClass('loading');
+            }
+        });
+    });
+</script>
+<!-- End-slider-script -->
+<script src="js/SmoothScroll.min.js"></script>
+<!-- start-smooth-scrolling -->
+<script type="text/javascript" src="js/move-top.js"></script>
+<script type="text/javascript" src="js/easing.js"></script>
+<script type="text/javascript">
+    jQuery(document).ready(function($) {
+        $(".scroll").click(function(event){
+            event.preventDefault();
+
+            $('html,body').animate({scrollTop:$(this.hash).offset().top},1000);
+        });
+    });
+</script>
+<!-- //end-smooth-scrolling -->
+<!-- smooth-scrolling-of-move-up -->
+<script type="text/javascript">
+    $(document).ready(function() {
+        /*
+        var defaults = {
+            containerID: 'toTop', // fading element id
+            containerHoverID: 'toTopHover', // fading element hover id
+            scrollSpeed: 1200,
+            easingType: 'linear'
+        };
+        */
+
+        $().UItoTop({ easingType: 'easeOutQuart' });
+
+    });
+</script>
+<!-- //smooth-scrolling-of-move-up -->
+<!-- Bootstrap core JavaScript
+================================================== -->
+<!-- Placed at the end of the document so the pages load faster -->
+<script src="js/bootstrap.js"></script>
+</body>
+</html>
